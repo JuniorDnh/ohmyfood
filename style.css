@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  font-family: 'Shrikhand', cursive;
+}
+
+/*----HEADER-----*/
+
+header {
+  text-align: center;
+}
+
+.localisation {
+  background-color: #eaeaea;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.header-background {
+  background-color: #f6f6f6;
+}
+
+button.btn {
+  min-height: 2.2rem;
+  text-align: center;
+  border-radius: 1em 1em 1em 1em;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0rem;
+  padding-top: 0rem;
+  background-color: #FF79DA;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-li{
+  display: flex;
+  margin: 1em;
+  min-height: 2.2rem;
+  text-align: center;
+  border-radius: 1em 1em 1em 1em;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0rem;
+  padding-top: 0rem;
+  background-color: #f6f6f6;
+  border: none;
+  cursor: pointer;
+}
+
+
+/*---Restaurants---*/
+.Restaurants {
+  background-color: #f6f6f6;
+  margin: 0%;
+}
+
+.title-resto {
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  align-items: center;
+}
+
+.card-img {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 1.25rem;
+  box-shadow: 1px 1px 5px grey;
+  margin: 1rem;
+}
+
+.card-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 1.25rem 1.25rem 0 0;
+  object-fit: cover;
+}
+
+
+  footer {
+    background-color: #3b3b3b;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+  } 
+
+
+
+  .titlefooter {
+    font-size: 18px;
+  }
+
+  /*--------MEDIA QUERIES---------------------*/
+  /* réglage à partir de 768px et + : corps un peu plus grand et même typo */
+  @media screen and (min-width:767.98px){
+    p{
+      font-size:21px;
+    }
+  }
+
+  footer {
+    background-color: #3b3b3b;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+  } 
