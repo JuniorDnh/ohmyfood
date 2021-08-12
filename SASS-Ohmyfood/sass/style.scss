@@ -7,6 +7,36 @@ body {
   font-family: "Shrikhand", cursive;
 }
 
+/*----HEADER-----*/
+
+header {
+  text-align: center;
+
+  .localisation__heading {
+    background-color: #eaeaea;
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+  
+  .header-background {
+    background-color: #f6f6f6;
+  }
+  
+  button.btn {
+    min-height: 2.2rem;
+    text-align: center;
+    border-radius: 1em 1em 1em 1em;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+    background-color: #ff79da;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+}
+
 /*---Restaurants---*/
 .Restaurants {
   background-color: #f6f6f6;
