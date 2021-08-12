@@ -70,13 +70,6 @@ button.btn {
   }
 
 
-
-
-
-
-
-
-
   /*---------FOOTER--------------*/
   footer {
     background-color: #3b3b3b;
@@ -85,6 +78,10 @@ button.btn {
     flex-direction: column;
     color: #ffffff;
   } 
+
+  .titlefooter {
+    font-size: 18px;
+  }
   
   
   
