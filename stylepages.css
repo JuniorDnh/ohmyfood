@@ -1,50 +1,53 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,300&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
-    font-family: 'Shrikhand', cursive;
-  } 
-  
+  font-family: "Shrikhand", cursive;
+}
 
 h2 {
-  font-family: 'Shrikhand', cursive;
-} 
+  font-family: "Shrikhand", cursive;
+}
 
 /*----HEADER-----*/
-
 header {
-    text-align: center;
-  }
+  text-align: center;
+}
 
-.img-menu img{
-    text-align: center;
-    width: 100%;
-    
+.img-menu img {
+  text-align: center;
+  width: 100%;
 }
 
 /*------CARTE-------------*/
-
 .section-menu {
-    background-color: #f6f6f6;
-    border-radius: 2em 2em 0 0;
+  background-color: #f6f6f6;
+  border-radius: 3em 3em 0 0;
 }
-
+.section-menu h3 {
+  padding-left: 1em;
+  border-bottom: 2px solid #99e2d0;
+}
 .section-menu h2 {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin-left: 0.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-left: 0.5em;
+  padding-left: 1em;
 }
-
-.card-menu {
+.section-menu h2 .fa-heart:before {
+  padding-left: 8em;
+}
+.section-menu .card-menu {
   display: flex;
   flex-direction: column;
   margin: 1em;
   min-height: 2.2rem;
   border-radius: 1em 1em 1em 1em;
-  box-shadow: grey;
+  box-shadow: 0px 4px 8px lightgrey;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 0rem;
@@ -53,50 +56,67 @@ header {
   border: none;
   cursor: pointer;
 }
+.section-menu .card-menu h4 {
+  margin-top: 0.6em;
+}
+.section-menu .card-menu p {
+  margin-top: -0.4em;
+}
+.section-menu .commander__btn {
+  padding-bottom: 4em;
+  text-align: center;
+  margin-top: 4em;
+}
+.section-menu button.btn {
+  min-height: 2.2rem;
+  text-align: center;
+  border-radius: 2em 2em 2em 2em;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  background: linear-gradient(0deg, #9356DC 0%, #ff79da 100%);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
 
+/*---------FOOTER--------------*/
+footer {
+  background-color: #3b3b3b;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+footer .titlefooter {
+  font-size: 18px;
+}
+footer li {
+  list-style-type: none;
+  padding-top: 0.5em;
+}
+footer fa-utensils::before {
+  content: "";
+  padding-right: 1em;
+}
+footer .fa-utensils:before {
+  content: "";
+  padding-right: 1em;
+}
 
-button.btn {
-    min-height: 2.2rem;
-    text-align: center;
-    border-radius: 1em 1em 1em 1em;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 0rem;
-    padding-top: 0rem;
-    background-color: #FF79DA;
-    border: none;
-    color: white;
-    cursor: pointer;
+/*--------MEDIA QUERIES---------------------*/
+/* réglage à partir de 768px et + : corps un peu plus grand et même typo */
+@media screen and (min-width: 767.98px) {
+  p {
+    font-size: 21px;
   }
+}
+.footer {
+  background-color: #3b3b3b;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
 
-
-  /*---------FOOTER--------------*/
-  footer {
-    background-color: #3b3b3b;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    color: #ffffff;
-  } 
-
-  .titlefooter {
-    font-size: 18px;
-  }
-  
-  
-  
-  
-  /*--------MEDIA QUERIES---------------------*/
-  /* réglage à partir de 768px et + : corps un peu plus grand et même typo */
-  @media screen and (min-width:767.98px){
-    p{
-      font-size:21px;
-    }
-  }
-
-  .footer {
-    background-color: #3b3b3b;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-  }
+/*# sourceMappingURL=stylepages.css.map */

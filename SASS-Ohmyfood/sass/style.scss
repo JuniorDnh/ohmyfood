@@ -3,7 +3,7 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-.h2 {
+.titlefooter {
   font-family: "Shrikhand", cursive;
 }
 
@@ -16,29 +16,101 @@ header {
     background-color: #eaeaea;
     padding-top: 1px;
     padding-bottom: 1px;
+    
+    
+    h3{
+      padding-top: 1em;
+      margin-top: 0em;
+      color: #3b3b3b;
+      padding-left: 1em;
+    }
+    .fa-map-marker-alt:before {
+      content: "\f3c5";
+      padding-right: 1em;
+      color: #3b3b3b;
+   }   
   }
-  
+
   .header-background {
     background-color: #f6f6f6;
+    margin-top: -1.5em;
+    
   }
-  
+  .title1er {
+    padding-top: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .description p {
+    color: gray;
+  }
+
+  .explorer {
+    padding-bottom: 3em;
+    padding-top: 1em;
+  }
+
   button.btn {
     min-height: 2.2rem;
     text-align: center;
-    border-radius: 1em 1em 1em 1em;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 0rem;
-    padding-top: 0rem;
-    background-color: #ff79da;
+    border-radius: 2em 2em 2em 2em;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
     border: none;
     color: white;
     cursor: pointer;
+    background: linear-gradient(0deg, #9356DC 0%, #ff79da 100%);
+    
+  }
+}
+
+.navigation {
+  padding-top: 2em;
+  .title2e {
+    padding-left: 1em;
+  }
+  
+  .nav__li {
+    display: flex;
+    margin: 1em;
+    min-height: 2.2rem;
+    text-align: center;
+    border-radius: 1.5em 1.5em 1.5em 1.5em;
+    padding-left: 1rem;
+    padding-bottom: 12px;
+    padding-top: 25px;
+    background-color: #f6f6f6;
+    border: none;
+    box-shadow: 0px 4px 8px lightgrey; 
+    cursor: pointer;
+    list-style-type: none;
+    .fa-mobile-alt:before {
+      content: "\f3cd";
+      padding-right: 2em;
+      padding-left: 1em;
+      color: grey;
+  }
+  .fa-list-ul:before {
+      content: "\f0ca";
+      padding-right: 2em;
+      padding-left: 1em;
+      color: grey;
+  }
+  .fa-store:before {
+      content: "\f54e";
+      padding-right: 2em;
+      padding-left: 1em;
+      color: grey;
+  }
   }
 }
 
 /*---Restaurants---*/
-.Restaurants {
+
+.restaurants {
   background-color: #f6f6f6;
   margin: 0%;
   .title-resto {
@@ -47,18 +119,54 @@ header {
     padding-right: 1rem;
     align-items: center;
   }
-  .card-img {
+  .card__img {
     display: flex;
     flex-direction: column;
     background-color: white;
     border-radius: 1.25rem;
     box-shadow: 1px 1px 5px grey;
-    margin: 1rem;
+    margin: 1.3rem;
+    p{
+      padding-left: 0.5em;
+      margin-top: -6px;
+      color: rgb(17, 16, 16);
+    }
+    h3{
+      padding-left: 0.5em;
+      margin-top: 11px;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: 1.25rem 1.25rem 0 0;
+      object-fit: cover;
+
+    }
   }
-  .card-img img {
-    height: 100%;
-    width: 100%;
-    border-radius: 1.25rem 1.25rem 0 0;
-    object-fit: cover;
+  
+}
+
+/*---------FOOTER--------------*/
+footer {
+  background-color: #3b3b3b;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+
+  .titlefooter {
+    font-size: 18px;
+  }
+  li {
+    list-style-type: none;
+    padding-top: 0.5em;
+  }
+  fa-utensils:before {
+    content: "\f2e7";
+    padding-right: 1em;
+  }
+  .fa-hands-helping:before {
+    content: "\f4c4";
+    padding-right: 0.6em;
   }
 }
