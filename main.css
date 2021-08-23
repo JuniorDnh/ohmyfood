@@ -1,0 +1,266 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.titlefooter {
+  font-family: "Shrikhand", cursive;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+}
+
+button.btn {
+  min-height: 2.2rem;
+  text-align: center;
+  border-radius: 2em 2em 2em 2em;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+}
+
+button.btn2 {
+  min-height: 2.2rem;
+  text-align: center;
+  border-radius: 2em 2em 2em 2em;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #3b3b3b;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+footer .titlefooter {
+  font-size: 18px;
+}
+footer li {
+  list-style-type: none;
+  padding-top: 0.5em;
+}
+footer .fa-utensils:before {
+  content: "";
+  padding-right: 1em;
+}
+footer .fa-hands-helping:before {
+  content: "";
+  padding-right: 0.6em;
+}
+
+/*----HEADER-----*/
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+header .localisation__heading {
+  background-color: #eaeaea;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+header .localisation__heading h3 {
+  padding-top: 1em;
+  margin-top: 0em;
+  color: #3b3b3b;
+  padding-left: 1em;
+}
+header .localisation__heading .fa-map-marker-alt:before {
+  content: "";
+  padding-right: 1em;
+  color: #3b3b3b;
+}
+header .header-background {
+  background-color: #f6f6f6;
+  margin-top: -0.5em;
+}
+header .title1er {
+  padding-top: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+header .description p {
+  color: gray;
+}
+header .explorer {
+  padding-bottom: 3em;
+  padding-top: 1em;
+}
+
+.navigation {
+  padding-top: 2em;
+}
+.navigation .title2e {
+  padding-left: 1em;
+}
+.navigation .nav__li {
+  display: flex;
+  margin: 1em;
+  min-height: 2.2rem;
+  text-align: center;
+  border-radius: 1.5em 1.5em 1.5em 1.5em;
+  padding-left: 1rem;
+  padding-bottom: 12px;
+  padding-top: 25px;
+  background-color: #f6f6f6;
+  border: none;
+  box-shadow: 0px 4px 8px lightgrey;
+  cursor: pointer;
+  list-style-type: none;
+}
+.navigation .nav__li .fa-mobile-alt:before {
+  content: "";
+  padding-right: 2em;
+  padding-left: 1em;
+  color: grey;
+}
+.navigation .nav__li .fa-list-ul:before {
+  content: "";
+  padding-right: 2em;
+  padding-left: 1em;
+  color: grey;
+}
+.navigation .nav__li .fa-store:before {
+  content: "";
+  padding-right: 2em;
+  padding-left: 1em;
+  color: grey;
+}
+
+/*---Restaurants---*/
+.restaurants {
+  background-color: #f6f6f6;
+  margin: 0%;
+}
+.restaurants__title {
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  align-items: center;
+}
+.restaurants .card__img {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 1.25rem;
+  box-shadow: 1px 1px 5px grey;
+  margin: 1.3rem;
+}
+.restaurants .card__img h3 {
+  padding-left: 0.5em;
+  margin-top: 11px;
+}
+.restaurants .card__img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 1.25rem 1.25rem 0 0;
+  object-fit: cover;
+}
+.restaurants .card__img .card__descri {
+  display: flex;
+  align-items: stretch;
+}
+.restaurants .card__img .card__descri p {
+  padding-left: 0.5em;
+  margin-top: -6px;
+  color: #111010;
+  flex: 1 1 auto;
+}
+.restaurants .card__img .card__descri .fa-heart:before {
+  font-size: 26px;
+  padding-right: 1em;
+  padding-bottom: 1em;
+}
+
+/*----HEADER-----*/
+header {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+header img {
+  align-items: center;
+  justify-content: center;
+}
+
+.img-menu img {
+  text-align: center;
+  width: 100%;
+}
+
+/*------CARTE-------------*/
+.section-menu {
+  background-color: #f6f6f6;
+  border-radius: 3em 3em 0 0;
+}
+.section-menu h2 {
+  padding-left: 1em;
+  border-bottom: 2px solid #99E2D0;
+}
+.section-menu h1 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-left: 0.5em;
+  padding-left: 1em;
+  font-size: 28px;
+}
+.section-menu h1 .fa-heart:before {
+  padding-left: 2.8em;
+}
+.section-menu .card-menu {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  min-height: 2.2rem;
+  border-radius: 1em 1em 1em 1em;
+  box-shadow: 0px 4px 8px lightgrey;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0rem;
+  padding-top: 0rem;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+.section-menu .card-menu h3 {
+  margin-top: 0.6em;
+}
+.section-menu .card-menu p {
+  margin-top: -0.4em;
+}
+.section-menu .commander__btn2 {
+  padding-bottom: 4em;
+  text-align: center;
+  margin-top: 4em;
+}
+.section-menu button.btn2 {
+  min-height: 2.2rem;
+  text-align: center;
+  border-radius: 2em 2em 2em 2em;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */

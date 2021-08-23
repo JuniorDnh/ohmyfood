@@ -7,6 +7,43 @@ body {
   font-family: "Shrikhand", cursive;
 }
 
+$color-background:#f6f6f6;
+$color-footer:#3b3b3b;
+$color-primaire:#9356DC;
+$color-secondaire:#FF79DA;
+$color-tertiaire:#99E2D0;
+@mixin color-degrade{
+  background: linear-gradient(0deg, $color-primaire 0%, $color-secondaire 100%);
+}
+
+@mixin footer {
+  footer {
+    background-color: $color-footer;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+  
+    .titlefooter {
+      font-size: 18px;
+    }
+    li {
+      list-style-type: none;
+      padding-top: 0.5em;
+    }
+    .fa-utensils:before {
+      content: "\f2e7";
+      padding-right: 1em;
+    }
+    .fa-hands-helping:before {
+      content: "\f4c4";
+      padding-right: 0.6em;
+    }
+  }
+  
+}
+
+
 /*----HEADER-----*/
 
 header {
@@ -21,18 +58,18 @@ header {
     h3{
       padding-top: 1em;
       margin-top: 0em;
-      color: #3b3b3b;
+      color: $color-footer;
       padding-left: 1em;
     }
     .fa-map-marker-alt:before {
       content: "\f3c5";
       padding-right: 1em;
-      color: #3b3b3b;
+      color: $color-footer;
    }   
   }
 
   .header-background {
-    background-color: #f6f6f6;
+    background-color: $color-background;
     margin-top: -1.5em;
     
   }
@@ -62,7 +99,7 @@ header {
     border: none;
     color: white;
     cursor: pointer;
-    background: linear-gradient(0deg, #9356DC 0%, #ff79da 100%);
+    @include color-degrade;
     
   }
 }
@@ -82,7 +119,7 @@ header {
     padding-left: 1rem;
     padding-bottom: 12px;
     padding-top: 25px;
-    background-color: #f6f6f6;
+    background-color: $color-background;
     border: none;
     box-shadow: 0px 4px 8px lightgrey; 
     cursor: pointer;
@@ -110,10 +147,12 @@ header {
 
 /*---Restaurants---*/
 
+  
+
 .restaurants {
-  background-color: #f6f6f6;
+  background-color: $color-background;
   margin: 0%;
-  .title-resto {
+  &__title {
     padding-top: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -126,11 +165,6 @@ header {
     border-radius: 1.25rem;
     box-shadow: 1px 1px 5px grey;
     margin: 1.3rem;
-    p{
-      padding-left: 0.5em;
-      margin-top: -6px;
-      color: rgb(17, 16, 16);
-    }
     h3{
       padding-left: 0.5em;
       margin-top: 11px;
@@ -140,33 +174,25 @@ header {
       width: 100%;
       border-radius: 1.25rem 1.25rem 0 0;
       object-fit: cover;
-
+    }
+    .card__descri{
+      display: flex;
+      align-items: stretch;
+      p{
+        padding-left: 0.5em;
+        margin-top: -6px;
+        color: rgb(17, 16, 16);
+        flex: 1 1 auto;
+      }
+      .fa-heart:before {
+        font-size: 26px;
+        padding-right: 1em;
+        padding-bottom: 1em;
+      }
     }
   }
   
 }
 
 /*---------FOOTER--------------*/
-footer {
-  background-color: #3b3b3b;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  color: #ffffff;
-
-  .titlefooter {
-    font-size: 18px;
-  }
-  li {
-    list-style-type: none;
-    padding-top: 0.5em;
-  }
-  fa-utensils:before {
-    content: "\f2e7";
-    padding-right: 1em;
-  }
-  .fa-hands-helping:before {
-    content: "\f4c4";
-    padding-right: 0.6em;
-  }
-}
+@include footer;

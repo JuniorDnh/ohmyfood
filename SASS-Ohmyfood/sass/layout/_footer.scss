@@ -1,0 +1,24 @@
+
+    footer {
+      background-color: #3b3b3b;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      color: #ffffff;
+    
+      .titlefooter {
+        font-size: 18px;
+      }
+      li {
+        list-style-type: none;
+        padding-top: 0.5em;
+      }
+      .fa-utensils:before {
+        content: "\f2e7";
+        padding-right: 1em;
+      }
+      .fa-hands-helping:before {
+        content: "\f4c4";
+        padding-right: 0.6em;
+      }
+    }
