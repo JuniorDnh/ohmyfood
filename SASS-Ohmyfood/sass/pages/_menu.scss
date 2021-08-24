@@ -1,3 +1,4 @@
+
 /*----HEADER-----*/
 
 header {
@@ -37,6 +38,9 @@ header {
         font-size: 28px;
         .fa-heart:before {
             padding-left: 2.8em;
+            :hover{
+                @include color-text-degrade;
+            }
         }
     }
     .card-menu {

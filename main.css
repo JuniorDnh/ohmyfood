@@ -64,6 +64,27 @@ footer .fa-hands-helping:before {
   padding-right: 0.6em;
 }
 
+.nav__li:hover {
+  transform: scale(1.02);
+  transition-duration: 0.05s;
+}
+
+.card__img:hover {
+  transform: scale(1.02);
+  transition-duration: 0.05s;
+}
+
+button:hover {
+  transform: scale(1.02);
+  transition-duration: 0.05s;
+}
+
+.fa-heart:before:hover {
+  background: -webkit-linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /*----HEADER-----*/
 header {
   display: flex;
@@ -222,6 +243,11 @@ header img {
 }
 .section-menu h1 .fa-heart:before {
   padding-left: 2.8em;
+}
+.section-menu h1 .fa-heart:before :hover {
+  background: -webkit-linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .section-menu .card-menu {
   display: flex;

@@ -1,3 +1,15 @@
 @mixin color-degrade{
     background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
   }
+
+  @mixin color-text-degrade{
+    background: -webkit-linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  
+@mixin anim-survol{
+      transform: scale(1.02);
+      transition-duration: 0.05s;
+  }
