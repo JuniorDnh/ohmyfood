@@ -1,0 +1,50 @@
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .navigation {
+        display: flex;
+        flex-direction: row;
+       
+        
+    }
+    .nav__li {
+        display: flex;
+        width: 40%;
+    }
+
+    .resto {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .resto2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 40%;
+    }
+    .card { 
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+
+    .section-menu {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+        
+
+    
+        .card-menu {
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            align-items: center;
+            
+        }
+        
+    }
+
+ }

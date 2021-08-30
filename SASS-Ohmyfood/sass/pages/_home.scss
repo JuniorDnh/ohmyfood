@@ -4,6 +4,8 @@ header {
     display: flex;
     flex-direction: column;
     text-align: center;
+    position: relative;
+    top: 10px;
   
     .localisation__heading {
       background-color: #eaeaea;
@@ -15,7 +17,7 @@ header {
         padding-top: 1em;
         margin-top: 0em;
         color: $color-footer;
-        padding-left: 1em;
+        padding-right: 1em;
       }
       .fa-map-marker-alt:before {
         content: "\f3c5";
@@ -49,6 +51,7 @@ header {
   
   .navigation {
     padding-top: 2em;
+    
     .title2e {
       padding-left: 1em;
     }
@@ -67,23 +70,35 @@ header {
       box-shadow: 0px 4px 8px lightgrey; 
       cursor: pointer;
       list-style-type: none;
+      .nav__li:hover {
+          background: #f5edff;
+      }
       .fa-mobile-alt:before {
         content: "\f3cd";
         padding-right: 2em;
         padding-left: 1em;
         color: grey;
+        .fa-mobile-alt:before:hover {
+        color: $color-primaire;
+        }
     }
     .fa-list-ul:before {
         content: "\f0ca";
         padding-right: 2em;
         padding-left: 1em;
         color: grey;
+        .fa-list-ul:before {
+            color: $color-primaire;
+        }
     }
     .fa-store:before {
         content: "\f54e";
         padding-right: 2em;
         padding-left: 1em;
         color: grey;
+        .fa-store:before {
+            color: $color-primaire;
+        }
     }
     }
   }
@@ -128,13 +143,49 @@ header {
           flex: 1 1 auto;
         }
         .fa-heart:before {
-          font-size: 26px;
+          
           padding-right: 1em;
           padding-bottom: 1em;
         }
         
       }
+
+      .heart {
+          display: flex;
+          position: relative;
+          opacity: 100%;
+          cursor: pointer;
+          .fa-heart__content {
+              font-size: 1.7em;
+          }
+          .fa-heart__content_empty {
+              position: relative;
+              right: 3em;
+              bottom: 1em;
+          }
+          .fa-heart__box {
+              position: relative;
+              left: 3em;
+          }
+          .fa-heart__box:hover > .fa-heart_full {
+              opacity: 1;
+              transform: scale(1);
+          }
+          .fa-heart_full {
+              font-size: 0.87em;
+              position: relative;
+              bottom: 28.5px;
+              right: 26px; 
+              @include color-text-degrade;
+              opacity: 0;
+              transition: all 500ms;
+              transform: scale(0);
+              transform-origin: bottom;
+          }
+          
+      }
     }
+
     
   }
  

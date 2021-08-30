@@ -8,7 +8,17 @@ header {
      img {
          align-items: center;
          justify-content: center;
-         
+         position: relative;
+         bottom: 0.5em;
+     }
+     .fa-arrow-left {
+         position: relative;
+         right: 7.8em;
+         top: 0.8em;
+         font-size: 1.3em;
+         a:visited {
+             color: black;
+         }
      }
   }
 
@@ -25,22 +35,54 @@ header {
 .section-menu {
     background-color: $color-background;
     border-radius: 3em 3em 0 0;
+    position: relative;
+    top: -67px;
     h2{
-        padding-left: 1em;
-        border-bottom: 2px solid $color-tertiaire ;
-    }
+        margin: 1em;
+        border-bottom: 3px solid $color-tertiaire ;
+        padding-bottom: 5px;
+        width: 65px;
+        }
     
     h1 {
         padding-top: 1em;
         padding-bottom: 1em;
         margin-left: 0.5em;
         padding-left: 1em;
-        font-size: 28px;
-        .fa-heart:before {
-            padding-left: 2.8em;
-            :hover{
-                @include color-text-degrade;
+        font-size: 20px;
+        .heart {
+            display: flex;
+            position: relative;
+            opacity: 100%;
+            cursor: pointer;
+            .fa-heart__content {
+                font-size: 1em;
             }
+            .fa-heart__content_empty {
+                position: relative;
+                left: 1em;
+                bottom: 1.5em;
+            }
+            .fa-heart__box {
+                position: relative;
+                left: 11em;
+            }
+            .fa-heart__box:hover > .fa-heart_full {
+                opacity: 1;
+                transform: scale(1);
+            }
+            .fa-heart_full {
+                font-size: 0.87em;
+                position: relative;
+                bottom: 31px;
+                left: 43px; 
+                @include color-text-degrade;
+                opacity: 0;
+                transition: all 500ms;
+                transform: scale(0);
+                transform-origin: bottom;
+            }
+            
         }
     }
     .card-menu {
@@ -57,11 +99,40 @@ header {
         background-color: white;
         border: none;
         cursor: pointer;
+        overflow: hidden;
+        text-overflow: ellipsis;
         h3{
             margin-top: 0.6em
         }
         p{
-            margin-top: -0.4em
+            margin-top: -0.4em;
+            font-size: 14px;  
+        }
+        .price {
+            position: relative;
+            left: 16.5em;
+            bottom: 34px;
+        }
+        .checkbox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-tertiaire;
+            width: 25px;
+            height: 59px;
+            border-radius: 0px 1em 1em 0px;
+            box-sizing: content-box;
+            position: absolute;
+            padding: 20px;
+            top: 0;
+            opacity: 1;
+            right: -10px;
+            transition: transform 330ms ease-in-out;
+            .fa-check-circle {
+                font-size: 30px;
+                color: white;
+            }
+            
         }
     
       }

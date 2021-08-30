@@ -1,3 +1,4 @@
+
 @mixin anim-survol{
     transform: scale(1.02);
     transition-duration: 0.05s;
@@ -8,9 +9,26 @@
     -webkit-text-fill-color: transparent;
   }
 
+  $color-background:#f6f6f6;
+  $color-footer:#3b3b3b;
+  $color-primaire:#9356DC;
+  $color-secondaire:#FF79DA;
+  $color-tertiaire:#99E2D0;
 
 .nav__li:hover {
-    @include anim-survol
+    @include anim-survol;
+    color: $color-primaire;
+    background-color: #f5edff;
+    .fas fa-mobile-alt{
+        color: $color-primaire;
+    }
+    .fas fa-list-ul{
+        color: $color-primaire;
+    }
+    .fas fa-store{
+        color: $color-primaire;
+    }
+
 }
 
 .card__img:hover{
@@ -25,10 +43,55 @@ button:hover {
     @include color-text-degrade;
 }
 
-.card-menu {
-    
-    
+
+
+/*---------------------------------------------------Animation card---------------------------------------------------------------------*/
+.card-menu{
+    animation: fadein 0.5s ease-in-out;
 }
+
+.entrees{
+    animation: fadein 1s ease-in-out;
+}
+
+.plats{
+    animation: fadein 1.5s ease-in-out;
+}
+
+.desserts{
+    animation: fadein 2s ease-in-out;
+}
+
+.fadein1{
+    animation: fadein 2s ease-in-out;
+}
+.fadein2{
+    animation: fadein 2.5s ease-in-out;
+}
+.fadein3{
+    animation: fadein 3s ease-in-out;
+}
+.fadein4{
+    animation: fadein 3.5s ease-in-out;
+}
+/*-----------Animation checkbox---------------*/
+
+.card-menu:hover .fa-check-circle {
+    transform: rotate(360deg);
+}
+.checkbox .fa-check-circle {
+    color: #fff;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card-menu:hover .checkbox {
+    opacity: 1;
+
+}
+
+
+
+
 
 
 
