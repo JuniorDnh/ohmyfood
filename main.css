@@ -154,6 +154,7 @@ button:hover {
   overflow: hidden;
   animation: load 3s ease-in-out;
   opacity: 0;
+  display: none;
 }
 
 .loader {
