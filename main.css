@@ -461,8 +461,6 @@ header .explorer {
   background: #99E2D0;
   border: 4px solid #99E2D0;
   border-radius: 5px;
-  position: absolute;
-  left: 15px;
 }
 .restaurants .card__img {
   display: flex;
