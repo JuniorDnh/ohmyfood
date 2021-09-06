@@ -18,7 +18,7 @@
 .nav__li:hover {
     @include anim-survol;
     color: $color-primaire;
-    background-color: #f5edff;
+    
     .fas fa-mobile-alt{
         color: $color-primaire;
     }
@@ -42,6 +42,9 @@ button:hover {
 .fa-heart:before:hover {
     @include color-text-degrade;
 }
+
+
+
 
 
 
@@ -75,16 +78,14 @@ button:hover {
     animation: fadein 3.5s ease-in-out;
 }
 /*-----------Animation checkbox---------------*/
-.card-menu :hover .checkbox {
-    opacity: 1;
-    transform: translate(-50px); }
+
   
   .checkbox {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: $color-tertiaire;
-    width: 5px;
+    width: 10px;
     height: 30px;
     border-radius: 0px 1.5em 1.5em 0px;
     position: absolute;
@@ -100,8 +101,9 @@ button:hover {
     color: #fff;
     transition: transform 502ms ease-in-out; }
 
-.card-menu :hover {
-    padding-right: 75px; }
+  .card-menu :hover {
+    transition-duration: 502ms;
+    padding-right: 50px; }
   
   .card-menu :hover .checkbox {
     opacity: 1;
@@ -110,11 +112,7 @@ button:hover {
   .card-menu :hover .fa-check-circle {
     transform: rotate(360deg); }
   
-  .card-menu :hover .price {
-    font-weight: bold; }
   
-  .card-menu :hover {
-    padding-right: 70px; }
   
 
 

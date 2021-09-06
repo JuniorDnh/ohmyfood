@@ -13,6 +13,10 @@ h1 {
   font-family: "Shrikhand", cursive;
 }
 
+a {
+  text-decoration: none;
+}
+
 button.btn {
   min-height: 2.2rem;
   text-align: center;
@@ -44,16 +48,25 @@ button.btn2 {
 footer {
   background-color: #3b3b3b;
   padding: 1rem;
-  display: flex;
-  flex-direction: column;
+  padding-left: 0em;
+  color: #ffffff;
+}
+footer a {
+  text-decoration: none;
   color: #ffffff;
 }
 footer .titlefooter {
   font-size: 18px;
+  margin-left: 1em;
 }
-footer li {
-  list-style-type: none;
-  padding-top: 0.5em;
+footer .footerdescrip {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+}
+footer .footericon {
+  display: flex;
+  flex-direction: row;
 }
 footer .fa-utensils:before {
   content: "";
@@ -61,14 +74,13 @@ footer .fa-utensils:before {
 }
 footer .fa-hands-helping:before {
   content: "";
-  padding-right: 0.6em;
+  padding-right: 0.5em;
 }
 
 .nav__li:hover {
   transform: scale(1.02);
   transition-duration: 0.05s;
   color: #9356DC;
-  background-color: #f5edff;
 }
 .nav__li:hover .fas fa-mobile-alt {
   color: #9356DC;
@@ -130,17 +142,12 @@ button:hover {
 }
 
 /*-----------Animation checkbox---------------*/
-.card-menu :hover .checkbox {
-  opacity: 1;
-  transform: translate(-50px);
-}
-
 .checkbox {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
-  width: 5px;
+  width: 10px;
   height: 30px;
   border-radius: 0px 1.5em 1.5em 0px;
   position: absolute;
@@ -159,7 +166,8 @@ button:hover {
 }
 
 .card-menu :hover {
-  padding-right: 75px;
+  transition-duration: 502ms;
+  padding-right: 50px;
 }
 
 .card-menu :hover .checkbox {
@@ -169,14 +177,6 @@ button:hover {
 
 .card-menu :hover .fa-check-circle {
   transform: rotate(360deg);
-}
-
-.card-menu :hover .price {
-  font-weight: bold;
-}
-
-.card-menu :hover {
-  padding-right: 70px;
 }
 
 .loader__anim {
@@ -247,47 +247,74 @@ button:hover {
     transform: translateY(0);
   }
 }
-@media (min-width: 991.98px) {
+@media (min-width: 847.98px) and (max-width: 2592.98px) {
+  /*------------Home----------*/
   .navigation {
     display: flex;
     flex-direction: row;
+    margin-left: -9em;
   }
-
-  .nav__li {
-    display: flex;
-    width: 40%;
+  .navigation .title2e {
+    opacity: 0;
+  }
+  .navigation .nav__li {
+    width: 50%;
   }
 
   .resto {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto;
     width: 100%;
   }
-
-  .resto2 {
+  .resto .restaurants__title {
+    font-size: 25px;
+    padding-bottom: 2em;
+    align-self: flex-end;
+    margin: 0 auto;
+  }
+  .resto .card {
+    margin: 0 auto;
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: wrap;
     flex-wrap: wrap;
-    width: 40%;
+  }
+  .resto .card__img {
+    width: 20%;
   }
 
-  .card {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
+  /*-----------------Pages------------------*/
+  .img-menu {
+    width: 50%;
+    margin: 0 auto;
   }
 
   .section-menu {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    border-radius: 0;
   }
-  .section-menu .card-menu {
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    align-items: center;
+  .section-menu h1 {
+    margin: 0 auto;
+    width: 200%;
+  }
+  .section-menu .entrees {
+    margin: 1em 1em 1em 1em;
+    width: 25%;
+  }
+  .section-menu .plats {
+    margin: 1em 1em 1em 1em;
+    width: 25%;
+  }
+  .section-menu .desserts {
+    margin: 1em 1em 1em 1em;
+    width: 25%;
+  }
+
+  .commander__btn2 {
+    align-self: flex-end;
+    margin: 0 auto;
   }
 }
 /*----- Animation page resto----*/
@@ -328,11 +355,13 @@ header .localisation__heading {
   padding-top: 1px;
   padding-bottom: 1px;
 }
-header .localisation__heading h3 {
-  padding-top: 1em;
-  margin-top: 0em;
-  color: #3b3b3b;
-  padding-right: 1em;
+header .localisation__heading input {
+  border: none;
+  background-color: #eaeaea;
+  font-size: 1rem;
+  padding: 19px 4px 19px 4px;
+  text-align: center;
+  width: 150px;
 }
 header .localisation__heading .fa-map-marker-alt:before {
   content: "";
@@ -377,8 +406,16 @@ header .explorer {
   cursor: pointer;
   list-style-type: none;
 }
-.navigation .nav__li .nav__li:hover {
-  background: #f5edff;
+.navigation .nav__li .num {
+  margin-left: -25px;
+  margin-right: 20px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  color: white;
+  text-align: center;
+  padding: 2px;
+  background-color: #9356DC;
 }
 .navigation .nav__li .fa-mobile-alt:before {
   content: "";
@@ -418,6 +455,14 @@ header .explorer {
   padding-left: 1rem;
   padding-right: 1rem;
   align-items: center;
+}
+.restaurants .nouveau {
+  color: #084435;
+  background: #99E2D0;
+  border: 4px solid #99E2D0;
+  border-radius: 5px;
+  position: absolute;
+  left: 15px;
 }
 .restaurants .card__img {
   display: flex;
@@ -504,6 +549,7 @@ header .fa-arrow-left {
   right: 7.8em;
   top: 0.8em;
   font-size: 1.3em;
+  color: black;
 }
 header .fa-arrow-left a:visited {
   color: black;

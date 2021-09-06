@@ -1,25 +1,38 @@
 
     footer {
+
       background-color: #3b3b3b;
       padding: 1rem;
-      display: flex;
-      flex-direction: column;
+      padding-left: 0em;
       color: #ffffff;
+      a {
+        text-decoration: none;
+        color: #ffffff;
+      }
       
     
       .titlefooter {
         font-size: 18px;
+        margin-left: 1em;
       }
-      li {
-        list-style-type: none;
-        padding-top: 0.5em;
+
+      .footerdescrip {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1em;
       }
+
+      .footericon {
+        display: flex;
+        flex-direction: row;
+      }
+      
       .fa-utensils:before {
         content: "\f2e7";
         padding-right: 1em;
       }
       .fa-hands-helping:before {
         content: "\f4c4";
-        padding-right: 0.6em;
+        padding-right: 0.5em;
       }
     }
