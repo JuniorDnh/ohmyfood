@@ -18,18 +18,9 @@
 .nav__li:hover {
     @include anim-survol;
     color: $color-primaire;
-    
-    .fas fa-mobile-alt{
-        color: $color-primaire;
-    }
-    .fas fa-list-ul{
-        color: $color-primaire;
-    }
-    .fas fa-store{
-        color: $color-primaire;
-    }
-
+    background-color:#f5edff ;
 }
+
 
 .card__img:hover{
     @include anim-survol

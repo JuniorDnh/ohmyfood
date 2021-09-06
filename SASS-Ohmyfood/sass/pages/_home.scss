@@ -85,33 +85,37 @@ header {
         background-color: $color-primaire;
       }
       
-      .fa-mobile-alt:before {
+      .fa-mobile-alt {
         content: "\f3cd";
         padding-right: 2em;
         padding-left: 1em;
         color: grey;
-        .fa-mobile-alt:before:hover {
-        color: $color-primaire;
-        }
+
     }
-    .fa-list-ul:before {
+    .fa-mobile-alt:hover {
+      color: $color-primaire;
+      }
+
+    .fa-list-ul{
         content: "\f0ca";
         padding-right: 2em;
         padding-left: 1em;
         color: grey;
-        .fa-list-ul:before {
-            color: $color-primaire;
-        }
+        
     }
-    .fa-store:before {
+    .fa-list-ul:hover {
+      color: $color-primaire;
+  }
+    .fa-store {
         content: "\f54e";
         padding-right: 2em;
         padding-left: 1em;
         color: grey;
-        .fa-store:before {
-            color: $color-primaire;
-        }
+        
     }
+    .fa-store:hover {
+      color: $color-primaire;
+  }
     }
   }
   
@@ -133,8 +137,7 @@ header {
       background: $color-tertiaire;
       border: 4px solid $color-tertiaire;
       border-radius: 5px;
-      
-      
+      position: absolute;
   }
 
   

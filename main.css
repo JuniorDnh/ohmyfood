@@ -29,6 +29,11 @@ button.btn {
   color: white;
   cursor: pointer;
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  box-shadow: 1px 1px 5px grey;
+}
+
+button.btn:hover {
+  box-shadow: 1px 1px 20px grey;
 }
 
 button.btn2 {
@@ -43,6 +48,11 @@ button.btn2 {
   border: none;
   color: white;
   cursor: pointer;
+  box-shadow: 1px 1px 5px grey;
+}
+
+button.btn2:hover {
+  box-shadow: 1px 1px 20px grey;
 }
 
 footer {
@@ -81,15 +91,7 @@ footer .fa-hands-helping:before {
   transform: scale(1.02);
   transition-duration: 0.05s;
   color: #9356DC;
-}
-.nav__li:hover .fas fa-mobile-alt {
-  color: #9356DC;
-}
-.nav__li:hover .fas fa-list-ul {
-  color: #9356DC;
-}
-.nav__li:hover .fas fa-store {
-  color: #9356DC;
+  background-color: #f5edff;
 }
 
 .card__img:hover {
@@ -277,11 +279,17 @@ button:hover {
     margin: 0 auto;
     width: 100%;
     display: flex;
-    flex-direction: wrap;
     flex-wrap: wrap;
   }
   .resto .card__img {
     width: 20%;
+  }
+  .resto .nouveau {
+    color: #084435;
+    background: #99E2D0;
+    border: 4px solid #99E2D0;
+    border-radius: 5px;
+    position: absolute;
   }
 
   /*-----------------Pages------------------*/
@@ -417,31 +425,31 @@ header .explorer {
   padding: 2px;
   background-color: #9356DC;
 }
-.navigation .nav__li .fa-mobile-alt:before {
+.navigation .nav__li .fa-mobile-alt {
   content: "";
   padding-right: 2em;
   padding-left: 1em;
   color: grey;
 }
-.navigation .nav__li .fa-mobile-alt:before .fa-mobile-alt:before:hover {
+.navigation .nav__li .fa-mobile-alt:hover {
   color: #9356DC;
 }
-.navigation .nav__li .fa-list-ul:before {
+.navigation .nav__li .fa-list-ul {
   content: "";
   padding-right: 2em;
   padding-left: 1em;
   color: grey;
 }
-.navigation .nav__li .fa-list-ul:before .fa-list-ul:before {
+.navigation .nav__li .fa-list-ul:hover {
   color: #9356DC;
 }
-.navigation .nav__li .fa-store:before {
+.navigation .nav__li .fa-store {
   content: "";
   padding-right: 2em;
   padding-left: 1em;
   color: grey;
 }
-.navigation .nav__li .fa-store:before .fa-store:before {
+.navigation .nav__li .fa-store:hover {
   color: #9356DC;
 }
 
@@ -461,6 +469,7 @@ header .explorer {
   background: #99E2D0;
   border: 4px solid #99E2D0;
   border-radius: 5px;
+  position: absolute;
 }
 .restaurants .card__img {
   display: flex;
@@ -649,20 +658,6 @@ header .fa-arrow-left a:visited {
   padding-bottom: 4em;
   text-align: center;
   margin-top: 4em;
-}
-
-button.btn2 {
-  min-height: 2.2rem;
-  text-align: center;
-  border-radius: 2em 2em 2em 2em;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
-  border: none;
-  color: white;
-  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */
