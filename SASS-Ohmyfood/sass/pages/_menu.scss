@@ -109,31 +109,21 @@ header {
             font-size: 14px;  
         }
         .price {
-            position: relative;
-            left: 16.5em;
-            bottom: 34px;
-        }
-        .checkbox {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: $color-tertiaire;
-            width: 25px;
-            height: 59px;
-            border-radius: 0px 1em 1em 0px;
-            box-sizing: content-box;
-            position: absolute;
-            padding: 20px;
-            top: 0;
-            opacity: 1;
-            right: -10px;
-            transition: transform 330ms ease-in-out;
-            .fa-check-circle {
-                font-size: 30px;
-                color: white;
-            }
+            
             
         }
+        .align {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            line-height: 1.5em; }
+          
+          .align p {
+            margin: 0;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden; }
     
       }
       .commander__btn2{

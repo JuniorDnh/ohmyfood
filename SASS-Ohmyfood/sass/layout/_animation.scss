@@ -84,11 +84,22 @@ button:hover {
     transition: transform 0.5s ease-in-out;
 }
 
-.card-menu:hover .checkbox {
+
+.card-menu:hover {
+    padding-right: 75px; }
+  
+  .card-menu:hover .checkbox {
     opacity: 1;
-
-}
-
+    transform: translate(-50px); }
+  
+  .card-menu:hover .fa-check-circle {
+    transform: rotate(360deg); }
+  
+  .card-menu:hover .price {
+    font-weight: bold; }
+  
+  .card-menu:hover {
+    padding-right: 73px; }
 
 
 
