@@ -86,44 +86,40 @@ header {
         }
     }
     .card-menu {
-        display: flex;
-        flex-direction: column;
-        margin: 1em;
-        min-height: 2.2rem;
-        border-radius: 1em 1em 1em 1em;
-        box-shadow: 0px 4px 8px lightgrey;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        padding-bottom: 0rem;
-        padding-top: 0rem;
-        background-color: white;
-        border: none;
+        background-color: #fff;
+        border-radius: 1.5em;
+        margin: 10px;
+        padding: 10px;
+        box-shadow: 4px 4px 6px #f3eeee;
+        position: relative;
         cursor: pointer;
-        overflow: hidden;
+        white-space: nowrap;
         text-overflow: ellipsis;
-        h3{
-            margin-top: 0.6em
-        }
-        p{
-            margin-top: -0.4em;
-            font-size: 14px;  
-        }
-        .price {
-            
+        overflow: hidden;
+        transition: padding-right 450ms ease-in-out;
+        h3 {
+            font-size: 1.25em;
+            margin: 0em;
             
         }
-        .align {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            line-height: 1.5em; }
-          
-          .align p {
-            margin: 0;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden; }
+        
+      
+      .aligne {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 1.5em; }
+      
+      .aligne p {
+        margin: 0;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        color: #404040;
+        font-size: 15px; }
+
+    
+    }
     
       }
       .commander__btn2{
@@ -144,4 +140,3 @@ header {
         color: white;
         cursor: pointer;
       }
-}

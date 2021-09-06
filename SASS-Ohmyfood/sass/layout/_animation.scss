@@ -75,31 +75,47 @@ button:hover {
     animation: fadein 3.5s ease-in-out;
 }
 /*-----------Animation checkbox---------------*/
-
-.card-menu:hover .fa-check-circle {
-    transform: rotate(360deg);
-}
-.checkbox .fa-check-circle {
-    color: #fff;
-    transition: transform 0.5s ease-in-out;
-}
-
-
-.card-menu:hover {
-    padding-right: 75px; }
-  
-  .card-menu:hover .checkbox {
+.card-menu :hover .checkbox {
     opacity: 1;
     transform: translate(-50px); }
   
-  .card-menu:hover .fa-check-circle {
+  .checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-tertiaire;
+    width: 5px;
+    height: 30px;
+    border-radius: 0px 1.5em 1.5em 0px;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    opacity: 0;
+    right: -50px;
+    transition: transform 332ms ease-in-out; }
+  
+  .checkbox .fa-check-circle {
+    text-align: center;
+    font-size: 2em; 
+    color: #fff;
+    transition: transform 502ms ease-in-out; }
+
+.card-menu :hover {
+    padding-right: 75px; }
+  
+  .card-menu :hover .checkbox {
+    opacity: 1;
+    transform: translate(-50px); }
+  
+  .card-menu :hover .fa-check-circle {
     transform: rotate(360deg); }
   
-  .card-menu:hover .price {
+  .card-menu :hover .price {
     font-weight: bold; }
   
-  .card-menu:hover {
-    padding-right: 73px; }
+  .card-menu :hover {
+    padding-right: 70px; }
+  
 
 
 
