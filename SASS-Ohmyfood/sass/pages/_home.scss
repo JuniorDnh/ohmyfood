@@ -34,8 +34,8 @@ header {
     }
     .title1er {
       padding-top: 1em;
-      margin-left: 2em;
-      margin-right: 2em;
+      margin-left: 3em;
+      margin-right: 3em;
     }
   
     .description p {
@@ -136,12 +136,14 @@ header {
       color: #084435;
       background: $color-tertiaire;
       border: 4px solid $color-tertiaire;
-      border-radius: 5px;
       position: absolute;
+      top: 15px;
+      right: 15px;
   }
 
   
     .card__img {
+      position: relative;
       display: flex;
       flex-direction: column;
       background-color: white;

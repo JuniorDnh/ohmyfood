@@ -15,10 +15,10 @@
   $color-secondaire:#FF79DA;
   $color-tertiaire:#99E2D0;
 
-.nav__li:hover {
+ .nav__li:hover {
     @include anim-survol;
     color: $color-primaire;
-    background-color:#f5edff ;
+    background-color:#f5edff !important;
 }
 
 
