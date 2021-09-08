@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body {
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 .titlefooter {
@@ -91,7 +92,7 @@ footer .fa-hands-helping:before {
   transform: scale(1.02);
   transition-duration: 0.05s;
   color: #9356DC;
-  background-color: #f5edff;
+  background-color: #f5edff !important;
 }
 
 .card__img:hover {
@@ -284,13 +285,6 @@ button:hover {
   .resto .card__img {
     width: 20%;
   }
-  .resto .nouveau {
-    color: #084435;
-    background: #99E2D0;
-    border: 4px solid #99E2D0;
-    border-radius: 5px;
-    position: absolute;
-  }
 
   /*-----------------Pages------------------*/
   .img-menu {
@@ -382,8 +376,8 @@ header .header-background {
 }
 header .title1er {
   padding-top: 1em;
-  margin-left: 2em;
-  margin-right: 2em;
+  margin-left: 3em;
+  margin-right: 3em;
 }
 header .description p {
   color: gray;
@@ -468,10 +462,12 @@ header .explorer {
   color: #084435;
   background: #99E2D0;
   border: 4px solid #99E2D0;
-  border-radius: 5px;
   position: absolute;
+  top: 15px;
+  right: 15px;
 }
 .restaurants .card__img {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: white;
